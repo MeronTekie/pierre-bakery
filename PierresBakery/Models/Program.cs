@@ -9,6 +9,9 @@ public class Program
 {
   public static void Main()
   {
+    try
+    {
+
     Bread totalBreadPrice =new Bread();
     Pastry totalPastryPrice =new Pastry();  
     Bakery totalBakeryPrice =new Bakery();
@@ -21,5 +24,10 @@ public class Program
     
     Console.WriteLine("Your total for today will be:"+totalBakeryPrice.totalPriceForBreadAndPastry(numberOfCakes,numberOfBread)+" USD");
     
+    }
+    catch(Exception exception)
+    {
+      Console.WriteLine(exception.Message +":Enter a valid number");
+    }
   }
 }
