@@ -2,8 +2,8 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Bakeries.Models;
 using Pastries.Models;
+using Breads.Models;
 using Programs.Models;
 using PierresBakeries.Models;
 
@@ -13,27 +13,30 @@ namespace PierresBakery.Tests
   public class PriceTests
   {
     [TestMethod]
-    public void Pastry_ResultsTotalPrice_TotalPastryPrice()
+    public void Bread_ResultsTotalPriceOfBread_TotalBreadPrice()
     {
-      
-      Pastry total = new Pastry();
-      Assert.AreEqual(5,total.totalPastryPrice(1));
-      
-
+      Bread total = new Bread();
+      Assert.AreEqual(15,total.totalBreadPrice(4));
     }
     [TestMethod]
-    public void Pastry_PrommotionResultToGiveEveryThirdPastryForFree_TotalPastryPrice()
-    {
-      
-      Pastry total = new Pastry();
-      Assert.AreEqual(30,total.totalPastryPrice(8));
-      
-
+    public void Bread_PrommotionResultToGiveEveryThirdBreadForFree_TotalBreadPrice()
+    {   
+      Bread total = new Bread();
+      Assert.AreEqual(30,total.totalBreadPrice(8));
     }
-
+    [TestMethod]
+    public void Pastry_ResultsTotalPriceOfPastryPrice_TotalPastryPrice()
+    {
+      Pastry pasrtyPrice = new Pastry();
+      Assert.AreEqual(4,pasrtyPrice.totalPastryPrice(2));
+    }
+    [TestMethod]
+    public void Pastry_PrommotionResultToGiveEveryThirdPastryForFiftypercentOff_TotalPastryPrice()
+    {   
+      Pastry pasrtyPrice = new Pastry();
+      Assert.AreEqual(10,pasrtyPrice.totalPastryPrice(6));
+    }
   }
-    
-
 }
 
 
