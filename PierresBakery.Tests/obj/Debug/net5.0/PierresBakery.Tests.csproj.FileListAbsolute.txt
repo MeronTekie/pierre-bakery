@@ -1,0 +1,5 @@
+/Users/ramenimo/Desktop/Epicodous/C-sharp/Projects/project/PierresBakery.Tests/obj/Debug/net5.0/PierresBakery.Tests.csproj.AssemblyReference.cache
+/Users/ramenimo/Desktop/Epicodous/C-sharp/Projects/project/PierresBakery.Tests/obj/Debug/net5.0/PierresBakery.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ramenimo/Desktop/Epicodous/C-sharp/Projects/project/PierresBakery.Tests/obj/Debug/net5.0/PierresBakery.Tests.AssemblyInfoInputs.cache
+/Users/ramenimo/Desktop/Epicodous/C-sharp/Projects/project/PierresBakery.Tests/obj/Debug/net5.0/PierresBakery.Tests.AssemblyInfo.cs
+/Users/ramenimo/Desktop/Epicodous/C-sharp/Projects/project/PierresBakery.Tests/obj/Debug/net5.0/PierresBakery.Tests.csproj.CoreCompileInputs.cache
