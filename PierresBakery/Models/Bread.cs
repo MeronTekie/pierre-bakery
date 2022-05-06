@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Pastries.Models;
 using Breads.Models;
-// using Programs.Models;
 using PierresBakeries.Models;
 
 
@@ -28,8 +27,6 @@ namespace Breads.Models
         breadPrice = (Math.Floor(numOfBread/3)*10) + (modulo*5);
       }
       return breadPrice;
-
     }
-
   }
 }
