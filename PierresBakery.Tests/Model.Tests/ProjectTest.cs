@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Bakeries.Models;
 using Pastries.Models;
 using Programs.Models;
-// using PierresBakeries.Models;
+using PierresBakeries.Models;
 
 namespace PierresBakery.Tests
 {
@@ -17,13 +17,25 @@ namespace PierresBakery.Tests
     {
       
       Pastry total = new Pastry();
-      Assert.AreEqual(6,total.totalPastryPrice(3));
+      Assert.AreEqual(5,total.totalPastryPrice(1));
+      
+
+    }
+    [TestMethod]
+    public void Pastry_PrommotionResultToGiveEveryThirdPastryForFree_TotalPastryPrice()
+    {
+      
+      Pastry total = new Pastry();
+      Assert.AreEqual(30,total.totalPastryPrice(8));
       
 
     }
 
   }
+    
+
 }
+
 
 
 
