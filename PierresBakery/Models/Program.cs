@@ -16,6 +16,8 @@ public class Program
     Pastry totalPastryPrice =new Pastry();  
     Bakery totalBakeryPrice =new Bakery();
     
+    Console.WriteLine("Welcome to the Best Bakery In Town ");
+    Console.WriteLine("We are glad to have you here! ");
     Console.WriteLine("How many cakes would like for today?");
     double numberOfCakes = double.Parse(Console.ReadLine());
     
