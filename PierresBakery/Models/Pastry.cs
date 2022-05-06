@@ -2,34 +2,32 @@ using System;
 using System.Collections.Generic;
 using Pastries.Models;
 using Breads.Models;
-using Programs.Models;
+// using Programs.Models;
 using PierresBakeries.Models;
 
 
 
-
-namespace Breads.Models
+namespace Pastries.Models
 
 {
-  public class Bread
+  public class Pastry
   {
-
-    public double totalBreadPrice( double numOfBread)
+    public double totalPastryPrice( double numOfPastry)
+  {
+    double pastryPrice =0;
+    double modulo =0;
+    if( numOfPastry% 3 ==0)
     {
-      double breadPrice =0;
-      double modulo =0;
-      if( numOfBread % 3 ==0)
-      {
-        breadPrice = (numOfBread/3)*10;
-      }
-      else
-      {
-        modulo=numOfBread%3;
-        breadPrice = (Math.Floor(numOfBread/3)*10) + (modulo*5);
-      }
-      return breadPrice;
-
+      pastryPrice = (numOfPastry/3)*5;
     }
+    else
+    {
+      modulo=numOfPastry%3;
+      pastryPrice = (Math.Floor(numOfPastry/3)*5) + (modulo*2);
+    }
+    return pastryPrice;
+  }
 
   }
+  
 }

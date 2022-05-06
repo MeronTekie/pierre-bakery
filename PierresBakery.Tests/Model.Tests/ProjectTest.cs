@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Pastries.Models;
 using Breads.Models;
-using Programs.Models;
+// using Programs.Models;
 using PierresBakeries.Models;
 
 namespace PierresBakery.Tests
@@ -36,6 +36,13 @@ namespace PierresBakery.Tests
       Pastry pasrtyPrice = new Pastry();
       Assert.AreEqual(10,pasrtyPrice.totalPastryPrice(6));
     }
+    [TestMethod]
+    public void Bakery_TotalPriceForBreadAndPastry_TotalBakeryPrice()
+    {   
+      Bakery bakeryPrice = new Bakery();
+      Assert.AreEqual(24,bakeryPrice.totalPriceForBreadAndPastry(2,6));
+    }
+  
   }
 }
 
